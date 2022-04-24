@@ -11,5 +11,10 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
   }
+  products = [
+    {id: '1', name: 'ali', age: 33, designation:'officer' },
+    {id: '2', name: 'ahmed', age: 22, designation: 'web developer'},
+    {id: '3', name: 'raza', age: 43 , designation: 'admin'}
+  ]
 
 }

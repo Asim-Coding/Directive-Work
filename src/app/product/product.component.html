@@ -1,6 +1,13 @@
 <p>
 product works!
 </p>
-<div *ngFor="let item of [1,2,3,4]">
+<!-- <div *ngFor="let item of [1,2,3,4]">
      Number is :  {{item}}
+</div> -->
+<h2>ng for example</h2>
+<div *ngFor = "let p of products">
+     <h4> Emplyee id : {{p.id}}</h4>
+      <p>Employee name :  {{p.name}}</p>
+      <p>Employee age :  {{p.age}}</p>
+      <p>Employee designation : {{p.designation}}</p>
 </div>
