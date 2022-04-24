@@ -8,6 +8,6 @@ product works!
 <div *ngFor = "let p of products">
      <h4> Emplyee id : {{p.id}}</h4>
       <p>Employee name :  {{p.name}}</p>
-      <p>Employee age :  {{p.age}}</p>
+      <p [ngStyle]="{color: p.age >= 33 ? 'Green' : 'Blue'}">Employee age :  {{p.age}}</p>
       <p>Employee designation : {{p.designation}}</p>
 </div>
