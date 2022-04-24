@@ -4,10 +4,12 @@ product works!
 <!-- <div *ngFor="let item of [1,2,3,4]">
      Number is :  {{item}}
 </div> -->
-<h2>ng for example</h2>
+<h2>*ngFor and [ngStyle] example</h2>
 <div *ngFor = "let p of products">
+  <div [ngStyle]="{backgroundColor : p.age >= 23 ? 'gray' : 'pink' }"> 
      <h4> Emplyee id : {{p.id}}</h4>
       <p>Employee name :  {{p.name}}</p>
       <p [ngStyle]="{color: p.age >= 33 ? 'Green' : 'Blue'}">Employee age :  {{p.age}}</p>
       <p>Employee designation : {{p.designation}}</p>
+</div>
 </div>
